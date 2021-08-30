@@ -18,7 +18,7 @@ func (greeter greeterImpl) SayHello(ctx context.Context, in *pb.HelloRequest) (*
 func main() {
 	listener, err := net.Listen("tcp", "localhost:8000")
 	if err != nil {
-		fmt.Println("failed to listen: %v", err)
+		fmt.Printf("failed to listen: %v", err)
 		return
 	}
 
